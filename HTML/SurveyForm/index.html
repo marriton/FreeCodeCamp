@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <P id="description"><i>Thank you for taking the time to help us improve the platform</i></P>
+        </div>
+        
+        <form id="survey-form" action="#" method="post">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label id="email-label" for="email" placeholder="Enter your Email">Email</label>
+                <input class="form-input" type="email" name="email" id="email" placeholder="Enter your email" value="" required>
+            </div>
+            
+            <div class="form-group">
+                <label id="number-label" for="number">What is your number?</label>
+                <input class="form-input" type="number" name="number" id="number" min="0" max="10" placeholder="Enter your phone number" value="1234567890">
+            </div>
+            
+            <div class="form-group">
+                <p>Combobox, select tag</p>
+                <select name="options" id="dropdown" class="form-input">
+                    <option value="1">Select option 1</option>
+                    <option value="2">Select option 2</option>
+                    <option value="3">Select option 3</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <p>Radio buttons</p>
+                <label><input name="radioButton" value="radio1" type="radio" class="input-radio">Radio 1</label>
+                <label><input name="radioButton" value="radio2" type="radio" class="input-radio">Radio 2</label>
+                <label><input name="radioButton" value="radio3" type="radio" class="input-radio">Radio 3</label>
+            </div>
+
+            <div class="form-group">
+                <p>Checkboxes</p>
+                <label><input name="checkbox1" value="checkbox1" type="checkbox" class="input-checkbox">Option 1</label>
+                <label><input name="checkbox2" value="checkbox2" type="checkbox" class="input-checkbox">Option 2</label>
+                <label><input name="checkbox3" value="checkbox3" type="checkbox" class="input-checkbox">Option 3</label>
+            </div>
+            
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            </div>
+    
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

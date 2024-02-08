@@ -1,0 +1,110 @@
+:root {
+    --color-light: #f3f3f3;
+    --color-dark: #1b1b32;
+    --color-transparent: rgba(72, 72, 151, 0.8);
+    --color-button: #37af65;
+}
+
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-white);
+    margin: 0;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+p,label{
+    font-size: 2.4rem;
+    padding: .9rem 0;
+}
+input,select,option{
+    font-size: 1.6rem;
+}
+
+.container{
+    background-color: var(--color-transparent);
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 70%;
+}
+.title-container{
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1.6rem 1.6rem 1.6rem .8rem;
+}
+
+.title-container{    
+    color: white;
+    text-align: center;
+}
+
+#survey-form{
+    background-color: #1b1b32cc;    
+    border-radius: .3rem;
+    color: #f3f3f3;    
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 3rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0 auto 1.2rem auto;
+    padding: .3rem;
+}
+
+.form-input{
+    background-color: #fff;
+    border: .1rem solid #ced4da;
+    border-radius: 0.3rem;
+    color: #495057;
+    height: 2.4rem;
+    width: 100%;
+    padding: 0.3rem 0.7rem;
+}
+
+.input-radio, .input-checkbox{
+    display: inline-block;
+    margin-right: 0.6rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+#submit{
+    background-color: var(--color-button);
+    border: .1rem solid var(--color-button);
+    border-radius: .3rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    display: block;    
+    padding: 1.2rem;
+    width: 100%;    
+}
